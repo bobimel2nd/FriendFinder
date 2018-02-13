@@ -10,6 +10,7 @@
   "author": "Bob Imel II",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "path": "^0.12.7"
   }
 }
