@@ -12,24 +12,39 @@
 
   <!-- Font Awesome Glyphicons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+<style type="text/css">
+  .fa_customClip {
+    position: absolute;
+    color: #0099CC;
+    clip: rect(0px,60px,60px,24px);
+  }
+  .fa_customFlip {
+    position: absolute;
+    color: #0099CC;
+    clip: rect(0px,60px,60px,24px);
+    -webkit-transform: scaleX(-1);
+  }
+</style>
 
 </head>
 
 <body>
 
   <div class="container">
-
     <div class="jumbotron">
-      <h1><i class="fa fa-facebook-square" aria-hidden="true"></i> Friend Finder</h1>
+      <h1>
+        <i class="fa fa-facebook-square fa_customFlip" aria-hidden="true"></i>
+        <i class="fa fa-facebook-square fa_customClip" aria-hidden="true"></i>
+        &nbsp;&nbsp;&nbsp;&nbsp;Friend Finder</h1>
       <hr>
       <h2>Answer a few basic questions. </h2>
       <h2>Then find the friend with the greatest compatibility!</h2>
       <br>
 
       <div>
-        <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>
+        <a href="/survey"><button type="button" class="btn btn-lg btn-primary">
+          <h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>
       </div>
-
     </div>
 
     <footer class="footer">
