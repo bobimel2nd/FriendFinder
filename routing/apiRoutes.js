@@ -10,6 +10,7 @@ module.exports = function(app) {
 	app.post("/api/friends", function(req, res) {
 		var newFriend = req.body
 		var oldFriend = FindFriend(newFriend)
+		allFriends.push(newFriend)
 
 		console.log("Adding " + newFriend.name)
 		console.log("Matched " + oldFriend.name)
@@ -27,11 +28,11 @@ function FindFriend(newFriend) {
 		var theSum = 0
 		theFriend.scores.forEach((score) => theSum =+ score)
 		var theDif = Math.abs(newSum-theSum)
-		if (theDif <= sumDif) {
+		if (theDif <== sumDif) {
 			sumDif = theDif
 			idxSav = index
 		}
+		console.log("Compared " + theFriend.name + "(" + newSum + " vs " + theSum + ")")
 	})
-	allFriends.push(newFriend)
 	return allFriends[idxSav]
 }
