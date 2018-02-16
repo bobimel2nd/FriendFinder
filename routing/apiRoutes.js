@@ -32,5 +32,6 @@ function FindFriend(newFriend) {
 			idxSav = index
 		}
 	})
+	allFriends.push(newFriend)
 	return allFriends[idxSav]
 }
