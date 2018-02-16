@@ -10,7 +10,7 @@ module.exports = function(app) {
 	app.post("/api/friends", function(req, res) {
 		var newFriend = req.body
 		var oldFriend = FindFriend(newFriend)
-//		allFriends.push(newFriend)
+		allFriends.push(newFriend)
 
 		console.log("Adding " + newFriend.name)
 		console.log("Matched " + oldFriend.name)
