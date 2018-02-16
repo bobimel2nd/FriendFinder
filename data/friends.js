@@ -59,8 +59,8 @@ module.exports = [
         "photo": "https://i.pinimg.com/236x/b1/7d/37/b17d37503b9d417c26d4a9bc600487a9--fourth-of-july-god-bless-america.jpg",
         "scores": ["3","3","4","2","3","3","3","2","3","5"]
     },
-    {   "name": "kjhlkjn",
-        "photo": "lkmnlm",
-        "scores": ["3","2","1","5","3","5","2","5","1","3"]
+    {   "name": "Bob",
+        "photo": "SpacemanBob.png",
+        "scores": ["3","3","3","3","3","3","3","3","3","3"]
     }
 ]
