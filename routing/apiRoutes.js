@@ -28,7 +28,7 @@ function FindFriend(newFriend) {
 		var theSum = 0
 		theFriend.scores.forEach((score) => theSum =+ score)
 		var theDif = Math.abs(newSum-theSum)
-		if (theDif <== sumDif) {
+		if (theDif <= sumDif) {
 			sumDif = theDif
 			idxSav = index
 		}
